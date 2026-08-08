@@ -141,15 +141,30 @@ extension CostUsageStore {
             let database = try self.ensureDatabase()
             return try operation(database)
         } catch {
+            // SQLITE_BUSY/SQLITE_LOCKED means another CodexBar process (app vs CLI) held the
+            // write lock past the busy timeout. The database is healthy — skip this operation
+            // and let the next refresh retry instead of deleting the store under the other
+            // process, which would discard its committed data and force a full corpus rescan.
+            if Self.isTransientContention(error) {
+                return fallback
+            }
             self.rebuildDatabase()
             do {
                 let database = try self.ensureDatabase()
                 return try operation(database)
             } catch {
-                self.rebuildDatabase()
+                if !Self.isTransientContention(error) {
+                    self.rebuildDatabase()
+                }
                 return fallback
             }
         }
+    }
+
+    private static func isTransientContention(_ error: Error) -> Bool {
+        guard case let StoreError.sqlite(code) = error else { return false }
+        let primary = code & 0xFF
+        return primary == SQLITE_BUSY || primary == SQLITE_LOCKED
     }
 
     func ensureDatabase() throws -> OpaquePointer {

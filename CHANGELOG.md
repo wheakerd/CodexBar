@@ -3,6 +3,7 @@
 ## 0.48.2 — Unreleased
 
 ### Fixed
+- Codex: a second CodexBar process (app + `codexbar cost` CLI) holding the SQLite write lock past the 5s busy timeout no longer wipes the whole cost store and forces a full corpus rescan — transient `SQLITE_BUSY`/`SQLITE_LOCKED` now skips the write and retries next refresh instead of rebuilding (refs #2760).
 - Menu: let long metric reset and pace details wrap to two lines instead of truncating, without clipping cached card heights (#2742). Thanks @Yuxin-Qiao!
 - Menu: let compact metric detail and reset rows wrap to a second line instead of truncating, so non-English locales keep the full pace and reset information (refs #2182). Thanks @Yuxin-Qiao!
 - Kimi: use official usage lane names and hide the Code 7-day row only when it duplicates the primary seven-day quota (matching percentage and reset) (#2741). Thanks @Yuxin-Qiao!
