@@ -2764,3 +2764,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "Belöningar";
 "Reward expiry" = "Belöningarnas utgångsdatum";
+"Rename" = "Byt namn";
+"Rename account" = "Byt namn på konto";
+"Account name" = "Kontonamn";
+"Leave blank to use the default name." = "Lämna tomt för att använda standardnamnet.";

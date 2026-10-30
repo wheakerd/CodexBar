@@ -2767,3 +2767,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "รางวัล";
 "Reward expiry" = "วันหมดอายุของรางวัล";
+"Rename" = "เปลี่ยนชื่อ";
+"Rename account" = "เปลี่ยนชื่อบัญชี";
+"Account name" = "ชื่อบัญชี";
+"Leave blank to use the default name." = "เว้นว่างไว้เพื่อใช้ชื่อเริ่มต้น";

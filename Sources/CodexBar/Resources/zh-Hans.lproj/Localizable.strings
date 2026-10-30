@@ -2757,3 +2757,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "奖励";
 "Reward expiry" = "奖励到期日期";
+"Rename" = "重命名";
+"Rename account" = "重命名账户";
+"Account name" = "账户名称";
+"Leave blank to use the default name." = "留空以使用默认名称。";

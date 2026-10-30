@@ -2766,3 +2766,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "Винагороди";
 "Reward expiry" = "Термін дії винагород";
+"Rename" = "Перейменувати";
+"Rename account" = "Перейменувати обліковий запис";
+"Account name" = "Назва облікового запису";
+"Leave blank to use the default name." = "Залиште поле порожнім, щоб використовувати назву за замовчуванням.";

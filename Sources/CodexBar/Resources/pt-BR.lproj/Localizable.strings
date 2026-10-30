@@ -2765,3 +2765,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "Recompensas";
 "Reward expiry" = "Validade das recompensas";
+"Rename" = "Renomear";
+"Rename account" = "Renomear conta";
+"Account name" = "Nome da conta";
+"Leave blank to use the default name." = "Deixe em branco para usar o nome padrão.";

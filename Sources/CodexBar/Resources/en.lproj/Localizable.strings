@@ -2770,3 +2770,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "Rewards";
 "Reward expiry" = "Reward expiry";
+"Rename" = "Rename";
+"Rename account" = "Rename account";
+"Account name" = "Account name";
+"Leave blank to use the default name." = "Leave blank to use the default name.";

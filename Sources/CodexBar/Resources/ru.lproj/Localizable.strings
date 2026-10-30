@@ -2766,3 +2766,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "Награды";
 "Reward expiry" = "Срок действия наград";
+"Rename" = "Переименовать";
+"Rename account" = "Переименовать аккаунт";
+"Account name" = "Имя аккаунта";
+"Leave blank to use the default name." = "Оставьте поле пустым, чтобы использовать имя по умолчанию.";

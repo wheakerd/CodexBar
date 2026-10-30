@@ -2765,3 +2765,7 @@
 /* WorkBuddy reward credits */
 "Rewards" = "報酬";
 "Reward expiry" = "報酬の有効期限";
+"Rename" = "名前を変更";
+"Rename account" = "アカウント名を変更";
+"Account name" = "アカウント名";
+"Leave blank to use the default name." = "空欄にするとデフォルトの名前を使用します。";
